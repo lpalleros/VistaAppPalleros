@@ -13,7 +13,6 @@ export default StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 3.84, 
         elevation: 5,
-        // fontFamily: "Cochin"
     },
     img: {
         width: 105,
@@ -31,7 +30,6 @@ export default StyleSheet.create({
     },
     title: {
         fontSize: 25,
-        fontFamily: 'Roboto',
         fontStyle: "normal",
         fontWeight: '400',
         fontSize: 20,

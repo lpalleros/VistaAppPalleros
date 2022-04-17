@@ -1,19 +1,13 @@
 import { Text, View, TouchableOpacity,TextInput, StyleSheet } from 'react-native';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import { HOME } from '../../constants/routes'
 import { Card } from "../../components"
-import { useFonts } from "expo-font";
-// import AppLoading from 'expo-app-loading';
 
 const GameScreen = ({navigation}) => { 
-  const [loaded] = useFonts({
-    Poppins: require('../../assets/fonts/Poppins/Poppins-LightItalic.ttf')
-  })
 
-  // if(!loaded) return <AppLoading />
   
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => { navigation.navigate('Home')}}>
+      <TouchableOpacity onPress={() => { navigation.navigate(HOME)}}>
           <Card text="Go Back"/>
       </TouchableOpacity>
     </View>
@@ -26,11 +20,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    // fontFamily: 'Poppins',
   },
-  text: {
-    // fontFamily: 'Poppins',
-  }
 });
 
 export default GameScreen;
